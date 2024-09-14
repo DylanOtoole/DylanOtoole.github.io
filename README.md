@@ -11,5 +11,6 @@
 ## Activity 3:
 
 ## Activity 4:
+![image](https://github.com/user-attachments/assets/75a3b413-5b24-4dc4-9d55-892b009505ea)
 
 ## Activity 5:
