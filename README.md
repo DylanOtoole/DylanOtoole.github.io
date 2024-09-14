@@ -9,6 +9,9 @@
 
 
 ## Activity 3:
+![image](https://github.com/user-attachments/assets/ceb5813d-3ebb-41fc-8e99-06e0f0f799b0)
+![image](https://github.com/user-attachments/assets/38592250-cd43-4906-9d63-364e0574b3d4)
+
 
 ## Activity 4:
 ![image](https://github.com/user-attachments/assets/75a3b413-5b24-4dc4-9d55-892b009505ea)
