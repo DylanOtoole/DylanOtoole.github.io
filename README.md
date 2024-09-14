@@ -5,6 +5,7 @@
 
 ## Activity 2:
 ![image](https://github.com/user-attachments/assets/0b7d8596-a548-494c-85eb-194b3134c299)
+![image](https://github.com/user-attachments/assets/d4801bee-6767-4682-a40f-02f6085f7045)
 
 
 ## Activity 3:
