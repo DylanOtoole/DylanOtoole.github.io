@@ -112,3 +112,9 @@ function loadProjects() {
 
     displayedProjects = end;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    loadProjects();
+
+    document.getElementById('load-more').addEventListener('click', loadProjects);
+});
