@@ -106,7 +106,7 @@ function insertProjects(end) {
 
 function loadProjects() {
 
-    const end = Math.min(displayedProjects + projectsPerLoad, projects.length)
+    const end = Math.min(projects.length,displayedProjects + projectsPerLoad)
 
     insertProjects(end);
 
@@ -115,6 +115,4 @@ function loadProjects() {
 
 document.addEventListener('DOMContentLoaded', function () {
     loadProjects();
-
-    document.getElementById('load-more').addEventListener('click', loadProjects);
 });

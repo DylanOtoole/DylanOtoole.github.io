@@ -401,7 +401,7 @@
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
         <div id="recent-projects"></div>
-        <button id="load-more" class="btn waves-effect waves-light">Load More</button>
+        <button id="load-more" class="btn">Load More</button>
       </div>
     </section>
 
@@ -594,6 +594,9 @@
   </script>
   <!-- rcent projects -->
   <script src="assets/js/projects.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('load-more').addEventListener('click', loadProjects);
+    });</script>
 </body>
 
 </html>
