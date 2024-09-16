@@ -94,23 +94,16 @@ function createProjectCard(project) {
     `;
 }
 
-let displayedProjects = 0;
-const projectsPerLoad = 2;
 const recentProjects = document.getElementById('recent-projects');
 
 function insertProjects(end) {
-    for (let i = displayedProjects; i < end; i++) {
+    for (let i = 0; i < projects.length; i++) {
         recentProjects.innerHTML += createProjectCard(projects[i]);
     }
 }
 
 function loadProjects() {
-
-    const end = Math.min(projects.length,displayedProjects + projectsPerLoad)
-
     insertProjects(end);
-
-    displayedProjects = end;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
