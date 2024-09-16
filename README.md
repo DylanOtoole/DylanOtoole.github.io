@@ -18,3 +18,5 @@
 ![image](https://github.com/user-attachments/assets/f3818fea-e0e6-4250-a5e6-00f7540ad693)
 
 ## Activity 5:
+![image](https://github.com/user-attachments/assets/483a23e5-3e90-45ce-9889-3f438027614e)
+
