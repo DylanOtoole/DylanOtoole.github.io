@@ -111,7 +111,7 @@ function insertProjects(added) {
 
 function loadProjects() {
   const added = Math.min(projectsShowing + 1, projects.length);
-  insertProjects(added, end);
+  insertProjects(added, added);
   projectsShowing += added;
 }
 
