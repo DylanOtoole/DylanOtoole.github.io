@@ -96,14 +96,14 @@ function createProjectCard(project) {
 
 const recentProjects = document.getElementById('recent-projects');
 
-function insertProjects(end) {
+function insertProjects() {
     for (let i = 0; i < projects.length; i++) {
         recentProjects.innerHTML += createProjectCard(projects[i]);
     }
 }
 
 function loadProjects() {
-    insertProjects(end);
+    insertProjects();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
