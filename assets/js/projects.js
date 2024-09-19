@@ -1,4 +1,24 @@
-const projects = [
+/*
+  Tool Name: Cursor
+  URL: https://www.cursor.com/
+  Date used: September 18, 2024
+  Description of how it was used: Cursor was used to generate a system design of the coding problem
+  Prompt(s): Asked Cursor a system design of making recent projects section
+  Answer: 
+  To implement the dynamic content loading for the "Recent Projects" section, here's a high-level overview of the design:
+  HTML Structure:
+  Add a new <div> with an ID (e.g., "recent-projects") in the "Projects" section of your HTML file.
+  Add a "Load More" button below this div.
+  JavaScript:
+  Create an array of project objects, each containing details like title, description, tools used, and link.
+  Write a function to create HTML for a single project card.
+  Write a function to load and display projects:
+  Initially, display only the most recent project.
+  When "Load More" is clicked, display additional projects.
+  Add an event listener to the "Load More" button
+*/
+
+const codingProjects = [
   {
     title: "World Mapping Application",
     description: "A GIS application that allows users to view geospatial data through the OpenStreetMap API.",
@@ -100,21 +120,26 @@ function createProjectCard(project) {
 }
 
 const recentProjects = document.getElementById('recent-projects');
-let projectsShowing = 0;
+let projectsShowing = -1;
 
 function insertProjects(added) {
   for (let i = projectsShowing; i < added; i++) {
-    recentProjects.innerHTML += createProjectCard(projects[i]);
+    recentProjects.innerHTML += createProjectCard(codingProjects[i]);
   }
 }
 
 function loadProjects() {
-  projects.sort((a, b) => new Date(b.date) - new Date(a.date));
-  const added = Math.min(projectsShowing + 1, projects.length);
-  insertProjects(added, added);
-  projectsShowing += added;
-}
+  // sort projects by date
+  codingProjects.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-document.addEventListener('DOMContentLoaded', function () {
-  loadProjects();
-});
+  let added = 0;
+  if (codingProjects.length < projectsShowing + 1) {
+    added = codingProjects.length;
+  }
+  else {
+    added = projectsShowing + 1;
+  }
+
+  insertProjects(added);
+  projectsShowing = projectsShowing + added;
+}
