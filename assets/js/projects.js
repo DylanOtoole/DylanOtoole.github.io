@@ -120,7 +120,7 @@ function createProjectCard(project) {
 }
 
 const recentProjects = document.getElementById('recent-projects');
-let projectsShowing = -1;
+let projectsShowing = -1 +1;
 
 function insertProjects(added) {
   for (let i = projectsShowing; i < added; i++) {
