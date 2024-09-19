@@ -103,13 +103,13 @@ const recentProjects = document.getElementById('recent-projects');
 let projectsShowing = 0;
 
 function insertProjects(added) {
-  projects.sort((a, b) => new Date(b.date) - new Date(a.date));
   for (let i = projectsShowing; i < added; i++) {
     recentProjects.innerHTML += createProjectCard(projects[i]);
   }
 }
 
 function loadProjects() {
+  projects.sort((a, b) => new Date(b.date) - new Date(a.date));
   const added = Math.min(projectsShowing + 1, projects.length);
   insertProjects(added, added);
   projectsShowing += added;
