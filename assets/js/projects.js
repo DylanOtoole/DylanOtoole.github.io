@@ -47,6 +47,13 @@ const codingProjects = [
     link: "#",
     date: "July 15, 2024"
   },
+  {
+    title: "Checkers Game",
+    description: "A desktop application that allows users to view their sorted books.",
+    tools: "Python, Tkinter",
+    link: "#",
+    date: "August 15, 2024"
+  },
 ];
 
 
